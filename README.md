@@ -1,5 +1,5 @@
 # LibraryApp
- Project: Library JavaScript Course on The Odin Project
+ Project: Library JavaScript Course on The Odin Project: see here: https://abongile184.github.io/LibraryApp/
 
 1.If you haven’t already, set up your project with skeleton HTML/CSS and JS files.
 
