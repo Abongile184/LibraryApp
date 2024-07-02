@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <!-- meta data -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="js library project">
+    <meta name="author" content="Abongile Arthur Mavela">
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico">
+    <title>Library</title>
+
+    <!-- external css for styling the pop up-->
+    <link rel="stylesheet" href="header-style.css">
+    <!-- external css -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- external js that gets loaded first before the page-->
+    <script src = "header-script.js"></script>
+    <!-- external js -->
+    <script src="app.js" defer></script>
+
+</head>
+<body>
+
+    <!-- used to display the JS welcome pop up-->
+    <header id="header"></header>
+
+    <div class ="main-content">
+        <div class = "top-heading">
+            <h1>YOUR BOOKS</h1>
+        </div>
+
+        <button class="pushable">
+            <span class="front">
+            Add Books
+            </span>
+        </button>
+<!-- dialog model form-->
+
+<dialog id="dialog">
+    <form action=" " method="get" class="container">
+        <div class="brand-logo"></div>
+
+        <div class="form-inputs">
+        <label for = "title">TITLE OF THE BOOK:</label>
+        <input type="text" placeholder="The Hobbit or Harry Potter " id="title" required />
+
+        <label for = "author">AUTHOR OF THE BOOK:</label>
+        <input type="text" placeholder="J.K Rowling or Charles Duhigg" id="author" required/>
+
+        <label>NUMBER OF PAGES:</label>
+        <input type="number" name="pages" id="numberOfPages" required> <br />
+
+        <label>STATUS:</label><br />
+        <input type="checkbox" name="status" id="Has-read-book" value = "Has Read Book" onclick="onlyOne(this)">
+        <span id = "read-checkbox">BOOK HAS BEEN READ</span><br />
+
+        <input type="checkbox" name="status" id="Has-Notread-book" value = "Has Not Read Boook" onclick="onlyOne(this)">
+        <span id = "Notread-checkbox">BOOK HAS NOT BEEN READ</span>
+
+        <button type="submit" id = "submit-button">Submit</button>
+        </div>
+
+    </form>
+
+    <div class="close-button">
+        <button class="close">close</button>
+    </div>
+
+</dialog>
+        
+    </div>
+
+    <!-- this is where the books are to be displayed-->
+    <div class="displaybooks">
+
+        
+    </div>
+
+    
+</body>
+</html>
